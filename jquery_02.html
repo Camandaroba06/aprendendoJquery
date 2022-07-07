@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <title>Aula_2_Jquery</title>
+</head>
+
+<body>
+    <div>
+        <label for="v1">Valor 1:</label>
+        <input type="text" id="v1" value="0" placeholder="Valor 1:">
+        <br>
+        <label for="v2">Valor 2:</label>
+        <input type="text" id="v2" value="0" placeholder="Valor 2:">
+        <br>
+        <label>Resultado</label>
+        <input type="text" id="Resultado" value="0">
+        <br>
+        <button id="jquerybutton_soma">Aperte para Somar</button>
+        <h3 id="R"></h3>
+    </div>
+    <script>
+        $("#jquerybutton_soma").click(function () {
+            let v1 = parseInt($('#v1').val())
+            let v2 = parseInt($('#v2').val())
+            let soma = v1 + v2
+            $('#Resultado').val(soma)
+            $('#R').text(soma)
+        })
+    </script>
+</body>
+
+</html>
