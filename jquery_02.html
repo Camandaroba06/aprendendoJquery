@@ -24,6 +24,23 @@
         <h3 id="R"></h3>
     </div>
     <script>
+        // Aqui criamos um somador
+        // Basicamente falamos que vamos usar Jquery com o "$"
+        // Em seguida INDICAMOS o que vamos mexer
+        // No caso, o id(para isso usamos "#") chamados "jquerybutton_soma"
+        // Depois colocamos "." e a propriedade que desejamos mexer
+        // No caso, "click"
+        // Após isso colocamos a função
+        // Dentro dela criamos variáveis e atribuimos valores para elas
+        // o TIPO das variáveis é "let"(veja quais os tipos de variáveis do JS)
+        // Utilizamos do comando "parseInt" para que o valor atribuido seja OBRIGATORIAMENTE "inteiro"
+        // Dentro desse comando indicamos que vamos usar jquery novamente com "$"
+        // Indicamos o que iremos mexer
+        // No Caso o id chamado v1('#v1')
+        // E o que desejamos dele
+        // No caso, o valor (usamos ".val()")
+        // Somamos e depois modificamos alguma estrutura para "printar" o valor no site
+        // Mexi no id R que é um h3 no meu html e fiz ele ser atualizado para o valor da soma :D
         $("#jquerybutton_soma").click(function () {
             let v1 = parseInt($('#v1').val())
             let v2 = parseInt($('#v2').val())
